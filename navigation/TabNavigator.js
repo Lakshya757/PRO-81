@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Ionicons from '@react-native-vector-icons/Ionicons'
+import Ionicons from 'react-native-vector-icons/Ionicons'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import Feed from '../screens/Feed';
@@ -11,7 +11,7 @@ const BottomTabNavigator = () =>{
     return(
         <Tab.Navigator
         screenOptions={({ route })=>({
-            tabBorIcon = ({focused, color, size}) =>{
+            tabBorIcon: ({focused, color, size}) =>{
                 let iconName;
 
                 if(route.name == 'Feed'){
